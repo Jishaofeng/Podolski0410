@@ -2,17 +2,17 @@
   <div id="app">
     <header class="">头部</header>
     <router-view></router-view>
-    <footer class="ui bottom demo inverted nine item labeled icon sidebar menu push overlay visible">
-      <router-link to="/" class="item">
+    <footer class="ui bottom demo grid inverted nine item labeled icon sidebar menu push overlay visible">
+      <router-link to="/" class="item four wide column">
         <i class="home icon"></i> Home </a>
       </router-link>
-      <router-link to="/teams" class="item">
+      <router-link to="/teams" class="item four wide column">
         <i class="trophy icon"></i> 球队 </a>
       </router-link>
-      <router-link to="news" class="item">
+      <router-link to="news" class="item four wide column">
         <i class="trophy icon"></i> 新闻 </a>
         </router-link>
-      <router-link to="/mine" class="item">  
+      <router-link to="/mine" class="item four wide column">  
         <i class="trophy icon"></i> 我的 </a>
       </router-link>
     </footer>   
