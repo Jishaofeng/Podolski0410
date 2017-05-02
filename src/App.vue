@@ -1,12 +1,20 @@
 <template>
   <div id="app">
-    <header class="ui container-full">头部</header>
+    <header class="">头部</header>
     <router-view></router-view>
-    <footer class="ui container">
-      <router-link to="/">主页</router-link>
-      <router-link to="/teams">球队</router-link>
-      <router-link to="news">新闻</router-link>
-      <router-link to="/mine">我的</router-link>
+    <footer class="ui bottom demo inverted nine item labeled icon sidebar menu push overlay visible">
+      <router-link to="/" class="item">
+        <i class="home icon"></i> Home </a>
+      </router-link>
+      <router-link to="/teams" class="item">
+        <i class="trophy icon"></i> 球队 </a>
+      </router-link>
+      <router-link to="news" class="item">
+        <i class="trophy icon"></i> 新闻 </a>
+        </router-link>
+      <router-link to="/mine" class="item">  
+        <i class="trophy icon"></i> 我的 </a>
+      </router-link>
     </footer>   
     
   </div>
@@ -22,12 +30,10 @@ export default {
 
 <style>
   header{
-    border:1px solid black;
-    
+      background:red;
+      font-size:4rem;
+      text-align:center;
+      line-height:6rem;
   }
-  footer{
-    position:absolute;
-    bottom:0; 
-  }
- 
+  
 </style>

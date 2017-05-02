@@ -5,6 +5,7 @@ import teams from '@/components/teams'
 import mine from '@/components/mine'
 import news from '@/components/news'
 
+
 Vue.use(Router)
 
 export default new Router({
