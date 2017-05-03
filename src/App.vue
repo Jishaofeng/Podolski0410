@@ -31,6 +31,10 @@ export default {
 <style>
   #header_ui{
     margin:0 0;
+    position:fixed;
+    top:0;
+    z-index:999999;
+    
   }
   html{
     font-size:15.625vw;

@@ -4,7 +4,7 @@ import Hello from '@/components/Hello'
 import teams from '@/components/teams'
 import mine from '@/components/mine'
 import news from '@/components/news'
-
+import bobao from '@/components/bobao'
 
 Vue.use(Router)
 

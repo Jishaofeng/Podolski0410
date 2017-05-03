@@ -3,11 +3,12 @@
 
 <!--<ul><li v-for="todo in todos">{{todo.text}}</li></ul>-->
     <table class="ui  table"  v-for="todo in todos">
-       <tr>
-        <th>{{todo.text}}</th>
-        <th>Status</th>
-        <th class="right aligned">Notes</th>
-     </tr>
+      <tr>
+        <th><h3>{{todo.zhuti}}</h3></th>
+        <th>{{todo.fenti}}</th>
+        <a href="http://www.baidu.com">点我</a>
+        <a href="#/bobao">ss</a>
+      </tr>
     </table>  
  </div>
 </template>

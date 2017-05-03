@@ -50,7 +50,9 @@ export default {
     .swiper-slide img{
         width:100%;
     }
-  
+    #top{
+      padding-top:40px;
+    }
 </style>
 
 
