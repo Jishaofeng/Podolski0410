@@ -1,43 +1,21 @@
 <template>
-  <div>
-      <Carousel autoplay >
-        <Carousel-item>
-            <div class="demo-carousel">
-              <img src="../assets/img/1.jpg" alt="" style="width:100%;">
-            </div>
-        </Carousel-item>
-        <Carousel-item>
-            <div class="demo-carousel">
-               <img src="../assets/img/1.jpg" alt="" style="width:100%;">
-            </div>
-        </Carousel-item>
-        <Carousel-item>
-            <div class="demo-carousel">
-               <img src="../assets/img/1.jpg" alt="" style="width:100%;">
-            </div>
-        </Carousel-item>
-        <Carousel-item>
-            <div class="demo-carousel">
-               <img src="../assets/img/1.jpg" alt="" style="width:100%;">
-            </div>
-        </Carousel-item>
-    </Carousel>
+  <div id="top">
+     <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../assets/img/1.jpg"/></div>
+            <div class="swiper-slide"><img src="../assets/img/1.jpg"/></div>
+            <div class="swiper-slide"><img src="../assets/img/1.jpg"/></div>
+        </div>
+    </div>
+    
   </div>
 </template>
-<script>
-    export default {
-        data () {
-            return {
-               
-            }
-        }
-    }
-</script>
 
-  </div>  
-</template>
+
+
 
 <script>
+import Swiper from '../../static/swiper-3.4.2.min'
 import semcss from '../assets/semantic.min.css'
 import jquery from '../assets/jquery.min.js'
 import semjs from '../assets/semantic.min.js'
@@ -49,11 +27,20 @@ export default {
     return {
       
     }
+  },
+  mounted:()=>{
+      var mySwiper = new Swiper('.swiper-container', {
+        autoplay: 1000,//可选选项，自动滑动
+        loop : true,
+    })
   }
 }
 </script>
+
 <style>
- 
+    .swiper-slide img{
+        width:100%;
+    }
 </style>
 
 
