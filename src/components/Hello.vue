@@ -7,7 +7,7 @@
             <div class="swiper-slide"><img src="../assets/img/1.jpg"/></div>
         </div>
     </div>
-    
+    <news/>
   </div>
 </template>
 
@@ -15,6 +15,7 @@
 
 
 <script>
+import news from './news.vue'
 import Swiper from '../../static/swiper-3.4.2.min'
 import semcss from '../assets/semantic.min.css'
 import jquery from '../assets/jquery.min.js'
@@ -23,6 +24,9 @@ import semjs from '../assets/semantic.min.js'
 
 export default {
   name: 'hello',
+  components:{
+    news
+  },
   data () {
     return {
       
@@ -35,12 +39,18 @@ export default {
     })
   }
 }
+ 
+
+
+
+
 </script>
 
 <style>
     .swiper-slide img{
         width:100%;
     }
+  
 </style>
 
 
