@@ -4,8 +4,8 @@ import Hello from '@/components/Hello'
 import teams from '@/components/teams'
 import mine from '@/components/mine'
 import news from '@/components/news'
+import login from '@/components/login'
 import bobao from '@/components/bobao'
-
 Vue.use(Router)
 
 export default new Router({
@@ -29,6 +29,12 @@ export default new Router({
       path: '/mine',
       name: 'mine',
       component: mine
+    },
+    {
+      path: '/bobao',
+      name: 'bobao',
+      component: bobao
     }
+
   ]
 })

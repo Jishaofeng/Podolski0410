@@ -7,6 +7,7 @@
             <div class="swiper-slide"><img src="../assets/img/1.jpg"/></div>
         </div>
     </div>
+    <teamXX/>
     <news/>
   </div>
 </template>
@@ -16,6 +17,7 @@
 
 <script>
 import news from './news.vue'
+import teamXX from './team_xuanxiang.vue'
 import Swiper from '../../static/swiper-3.4.2.min'
 import semcss from '../assets/semantic.min.css'
 import jquery from '../assets/jquery.min.js'
@@ -25,7 +27,7 @@ import semjs from '../assets/semantic.min.js'
 export default {
   name: 'hello',
   components:{
-    news
+    news,teamXX
   },
   data () {
     return {

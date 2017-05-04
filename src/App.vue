@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <header class="ui top demo grid inverted nine item labeled icon  menu push overlay visible" id="header_ui"><h1 style="color:white;">天下足球</h1></header>
+    <header class="ui top demo grid inverted nine item labeled icon  menu push overlay visible" id="header_ui"><h1 style="color:white;">{{title}}</h1></header>
     <router-view></router-view>
     <footer class="ui bottom demo grid inverted nine item labeled icon sidebar menu push overlay visible" >
       <router-link to="/" class="item four wide column">
@@ -24,7 +24,12 @@
 <script>
 
 export default {
-  name: 'app'
+  name: 'app',
+  data () {
+    return {
+      title:"天下足球"
+    } 
+  },
 }
 </script>
 
@@ -34,7 +39,7 @@ export default {
     position:fixed;
     top:0;
     z-index:999999;
-    
+   
   }
   html{
     font-size:15.625vw;

@@ -1,5 +1,5 @@
 <template>
-  <div>你好 我是球队</div>
+  
 </template>
 
 <script>
