@@ -2,7 +2,7 @@
      
     <div id="bobao">
         <header class="ui top demo grid inverted nine item labeled icon  menu push overlay visible" id="header_ui">
-            <a href="#/" onClick="javascript :history.back(-1);"/><</a>
+            <a href="#/" onClick="javascript :history.back(-1);" id="header_left"> < </a>
             <h1 style="color:white;">新闻</h1>
         </header>
         <div class="swiper-container" >
@@ -84,6 +84,12 @@
     }
     #text2{
        margin-bottom:100px;
+    }
+    #header_left{
+        position:fixed;
+        left:0;
+       color:white;
+       font-size:20px;
     }
 </style>
 
