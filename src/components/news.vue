@@ -43,12 +43,12 @@ export default {
     methods:{
       tiaozhuan:(data)=>{
         //var _this = this;
-          console.log(data.toElement.id);
+         // console.log(data.toElement.id);
           var url = data.toElement.id;
-
+          console.log(url)
         //console.log($(this).attr("data-id"));
         location.href = "/#/bobao?" +url;
-        console.log(location.href)
+        //console.log(location.href)
        
       }
     }

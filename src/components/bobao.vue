@@ -7,11 +7,11 @@
         </header>
         <div class="swiper-container" >
             <div class="swiper-wrapper" >
-                <div class="swiper-slide " v-for="news2 in news1"><img :src="news2" class="bb_img"/></div>    
+                <div class="swiper-slide " v-for="news2 in news0"><img :src="news2" class="bb_img"/></div>    
             </div>
         </div> 
-        <div class="bb_font" v-for="todo in font1">
-            <p>{{todo.text}}</p>
+        <div  id="neirong" >
+           {{todos.text}}
         </div>
     </div>
 </template>
@@ -29,25 +29,35 @@
         data () {
             return {
                 font1:[],
-                news1:[],
+                news0:[],
+                todos:[],
             } 
         },
     
      mounted(){
-        var BL = location.search;
-        console.log(BL); 
         var _this = this;
         $.ajax({
           url:"../../static/newsJ.json",
           type:'GET',
           //dataType: 'json'
        })
-      .done(function(data){
-          //console.log(data.todos[0].text);
-           console.log(data)
-            //_this.news1 = data.news1;
-            //console.log(_this.font1);
-            //console.log(_this.news1)
+      .done(function(data){ 
+           var str = location.href;
+           var Id = str.split("?")[1];
+           console.log(Id);
+           //console.log(data.todos[Id].zhuti);
+           //console.log(data.todos[Id].text);
+
+          _this.todos = data.todos[Id];
+          //console.log(_this.todos)
+         
+//$("123").appendTo("#neirong");
+         
+
+
+          // _this.news0 = data.news0;
+          // _this.news[Id] = data.news[Id];
+        // _this.news0 = data.news0;      
             setTimeout(function(){
                 var mySwiper1 = new Swiper('.swiper-container', {
                 autoplay: 1000,//可选选项，自动滑动
