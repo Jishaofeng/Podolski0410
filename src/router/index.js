@@ -6,6 +6,7 @@ import mine from '@/components/mine'
 import news from '@/components/news'
 import login from '@/components/login'
 import bobao from '@/components/bobao'
+import game from '@/components/game';
 Vue.use(Router)
 
 export default new Router({
@@ -34,7 +35,11 @@ export default new Router({
       path: '/bobao',
       name: 'bobao',
       component: bobao
+    },
+    {
+      path: '/game',
+      name: 'game',
+      component: game
     }
-
   ]
 })

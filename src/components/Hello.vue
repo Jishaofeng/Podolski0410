@@ -39,6 +39,8 @@ export default {
         autoplay: 1000,//可选选项，自动滑动
         loop : true,
     })
+
+   
   }
 }
  

@@ -1,5 +1,4 @@
-<template>
-     
+<template>  
     <div id="bobao">
         <header class="ui top demo grid inverted nine item labeled icon  menu push overlay visible" id="header_ui">
             <a href="#/" onClick="javascript :history.back(-1);" id="header_left"> < </a>
