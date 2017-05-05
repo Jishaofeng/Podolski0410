@@ -10,8 +10,10 @@
                 <div class="swiper-slide " v-for="news2 in todos.pic"><img :src="news2" class="bb_img"/></div>    
             </div>
         </div> 
-        <div  id="neirong" >
-           {{todos.text}}   
+        <div class="bobao_juti">
+           <p id="neirong">{{todos.text}}</p>
+           <img :src="news1" v-for="news1 in todos.picture" class="news1"/>   
+           <p id="text2">{{todos.text2}}</p>
         </div>
     </div>
 </template>
@@ -72,6 +74,16 @@
     .bb_img{
         width:100%;
         height:250px;
+    }
+    .news1{
+        width:100%;
+        height:250px;
+    }
+    #neirong{
+        text-indent: 2em;
+    }
+    #text2{
+       margin-bottom:100px;
     }
 </style>
 
