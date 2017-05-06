@@ -28,6 +28,7 @@ export default {
 <style>
     #teamXX {
         text-align:center;
+        margin-bottom:-60px;
     }
     #teamXX Col{
         border:1px solid black;
@@ -35,6 +36,7 @@ export default {
     #teamXX img{
         width:60%;
     }
+
 </style>
 
 

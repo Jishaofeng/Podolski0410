@@ -5,26 +5,26 @@
     <a class="item" data-tab="second">德甲</a>
     <a class="item" data-tab="third">意甲</a>
     <a class="item" data-tab="fouth">英超</a>
-    <a class="item" data-tab="fifth">欧冠</a>
-    <a class="item" data-tab="sixth">世界</a>
+    <a class="item" data-tab="fifth">法甲</a>
+    <a class="item" data-tab="sixth">欧冠</a>
   </div>
   <div class="ui bottom attached tab segment active" data-tab="first">
     <game/>
   </div>
   <div class="ui bottom attached tab segment" data-tab="second">
-    第二
+    <game1/>
   </div>
   <div class="ui bottom attached tab segment" data-tab="third">
-    第三
+    <game2/>
   </div>
    <div class="ui bottom attached tab segment" data-tab="fouth">
-    第四
+    <game3/>
   </div>
    <div class="ui bottom attached tab segment" data-tab="fifth">
-    第五
+    <game4/>
   </div>
    <div class="ui bottom attached tab segment" data-tab="sixth">
-    第六
+    <game5/>
   </div>
 </div>  
 </template>
@@ -32,7 +32,11 @@
 <script>
 import semcss from '../assets/semantic.min.css'
 import game from './game.vue'
-
+import game1 from './game1.vue'
+import game2 from './game2.vue'
+import game3 from './game3.vue'
+import game4 from './game4.vue'
+import game5 from './game5.vue'
 export default {
   name: 'teams',
   data () {
@@ -47,6 +51,11 @@ export default {
   },
   components:{
     game,
+    game1,
+    game2,
+    game3,
+    game4,
+    game5,
   }
 }
 </script>

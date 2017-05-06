@@ -2,9 +2,9 @@
   <div id="top">
      <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="../assets/img/1.jpg"/></div>
-            <div class="swiper-slide"><img src="../assets/img/1.jpg"/></div>
-            <div class="swiper-slide"><img src="../assets/img/1.jpg"/></div>
+            <div class="swiper-slide" ><img src="../../static/img/101.jpg" class="imgimg"/></div>
+            <div class="swiper-slide" ><img src="../../static/img/202.jpg"/></div>
+            <div class="swiper-slide" ><img src="../../static/img/ouguan4.jpg"/></div>
         </div>
     </div>
     <teamXX/>
@@ -53,10 +53,12 @@ export default {
 <style>
     .swiper-slide img{
         width:100%;
+        height:260px;
     }
     #top{
       padding-top:40px;
     }
+   
 </style>
 
 

@@ -4,6 +4,7 @@
             <a href="#/" onClick="javascript :history.back(-1);" id="header_left"> < </a>
             <h1 style="color:white;">新闻</h1>
         </header>
+        <h3 class="bobao_h1">{{todos.zhuti}}</h3>
         <div class="swiper-container" >
             <div class="swiper-wrapper" >
                 <div class="swiper-slide " v-for="news2 in todos.pic"><img :src="news2" class="bb_img"/></div>    
@@ -31,6 +32,7 @@
             return {
                 font1:[],
                 todos:[],
+                title:"",
             } 
         },
     
@@ -83,12 +85,17 @@
     }
     #text2{
        margin-bottom:100px;
+       text-indent: 2em;
     }
     #header_left{
         position:fixed;
         left:0;
        color:white;
        font-size:20px;
+    }
+    .bobao_h1{
+        text-align:center;
+        padding:10px;
     }
 </style>
 

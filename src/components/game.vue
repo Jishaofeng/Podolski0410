@@ -35,7 +35,8 @@ export default {
           //console.log(data);
           _this.todos = data.todos[0].duiwu;
           //console.log(data.todos[0].duiwu[0]);
-          
+          //_this.todds1 = data.todos[1].zhuti;
+         // _this.todos1 = data.todos[0].zhuti;
         
       })
   }
