@@ -2,7 +2,7 @@
   <div id="app">
     <header class="ui top demo grid inverted nine item labeled icon  menu push overlay visible" id="header_ui"><h1 style="color:white;">{{title}}</h1></header>
     <router-view></router-view>
-    <footer class="ui bottom demo grid inverted nine item labeled icon sidebar menu push overlay visible" >
+    <footer class="ui bottom demo grid inverted nine item labeled icon sidebar menu push overlay visible">
       <router-link to="/" class="item four wide column">
         <i class="home icon"></i> 主页 </a>
       </router-link>
@@ -47,4 +47,5 @@ export default {
  .ui.labeled.icon.menu .item{
    min-width:0 !important;
  }
+
 </style>

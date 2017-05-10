@@ -22,12 +22,12 @@ import Swiper from '../../static/swiper-3.4.2.min'
 import semcss from '../assets/semantic.min.css'
 import jquery from '../assets/jquery.min.js'
 import semjs from '../assets/semantic.min.js'
-
+//import mine from './mine.vue'
 
 export default {
   name: 'hello',
   components:{
-    news,teamXX
+    news,teamXX,//mine
   },
   data () {
     return {

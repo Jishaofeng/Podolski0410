@@ -86,12 +86,14 @@
     #text2{
        margin-bottom:100px;
        text-indent: 2em;
+       height:200px;
     }
     #header_left{
         position:fixed;
-        left:0;
+        left:10%;
        color:white;
-       font-size:20px;
+       font-size:26px;
+       
     }
     .bobao_h1{
         text-align:center;

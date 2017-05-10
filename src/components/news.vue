@@ -2,8 +2,8 @@
  <div id="news">
 
 <!--<ul><li v-for="todo in todos">{{todo.text}}</li></ul>-->
-    <table class="ui  table"  v-for="todo in todos" id="beijing">
-      <tr>
+    <table class="ui  table"   id="beijing">
+      <tr v-for="todo in todos">
         <th><h3><a :id="todo.id" @click="tiaozhuan">{{todo.zhuti}}</a></h3></th>
         <th><a href="#">{{todo.fenti}}</a></th>
       </tr>
@@ -61,6 +61,9 @@ export default {
 <style>
    #news{
      margin-top:40px;
+     margin-bottom:100px;
+   }
+   #beijing{
      margin-bottom:100px;
    }
 </style>
